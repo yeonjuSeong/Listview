@@ -56,6 +56,8 @@
             this.lvView.UseCompatibleStateImageBehavior = false;
             this.lvView.UseWaitCursor = true;
             this.lvView.View = System.Windows.Forms.View.Details;
+            // this.lvView.SelectedIndexChanged += new System.EventHandler(this.LvView_SelectedIndexChanged);
+            this.lvView.Click += new System.EventHandler(this.LvView_Click);
             // 
             // lblName
             // 
@@ -113,6 +115,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // chName
             // 
